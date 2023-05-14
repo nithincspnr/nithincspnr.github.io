@@ -119,4 +119,19 @@ ul {
 .education {
     background-color: #890620ff;
     padding-bottom: 32px;
+    color: white;
+}
+
+.education-item {
+    margin: 24px auto;
+}
+
+.education-item p {
+    font-size: 14px;
+}
+
+/* Contact */
+.contact {
+    background-color: #2c0703ff;
+    color: white;
 }
