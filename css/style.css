@@ -42,6 +42,22 @@ p {
 }
 
 /* Header */
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items li {
+    padding: 10px;
+}
+
 header {
     background-color: #ebd4cbff;
     text-align: center;
@@ -58,7 +74,7 @@ header {
 }
 
 .profile {
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 .profile p {
