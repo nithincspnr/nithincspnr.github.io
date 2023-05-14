@@ -1,0 +1,122 @@
+/* Color palette */
+/* SCSS HEX */
+/* $pale-dogwood: #ebd4cbff;
+$rosy-brown: #da9f93ff;
+$light-sea-green: #2ec4b6ff;
+$burgundy: #890620ff;
+$black-bean: #2c0703ff; */
+
+/* Global styles */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3,
+hr,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrap {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.title {
+    padding-top: 26px;
+    padding-bottom: 8px
+}
+
+/* Header */
+header {
+    background-color: #ebd4cbff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.profile {
+    padding: 20px 0;
+}
+
+.profile p {
+    margin: 12px 0;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 10%;
+}
+
+.profile-img {
+    width: 250px;
+    border-radius: 50%;
+    border: 12px solid #2ec4b6ff
+}
+
+/* Work experience */
+.work-experience {
+    background-color: white;
+    padding-bottom: 32px;
+}
+
+.job-title h3 {
+    padding: 0;
+}
+
+.job-title p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.job-title p:nth-of-type(2) {
+    font-style: italic;
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    margin: 18px 0;
+}
+
+.job-summary {
+    margin-top: 18px;
+}
+
+.job-summary p,
+ul {
+    font-size: 14px;
+}
+
+/* Projects */
+.projects {
+    background-color: #2ec4b6ff;
+    padding-bottom: 32px;
+}
+
+/* Education */
+.education {
+    background-color: #890620ff;
+    padding-bottom: 32px;
+}
