@@ -17,27 +17,27 @@
 <body>
     <main>
         <header>
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="menu-items">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <div class="profile content-wrap" id="home">
-                <!-- Menu -->
-                <div class="menu">
-                    <ul class="menu-items">
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#experience">Experience</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#education">Education</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
                 <!-- Profile -->
                 <img class="profile-img" src="images/dp-nithin-cs.jpg" />
                 <div class="content">
@@ -251,12 +251,15 @@
 </body>
 <script type="text/javascript">
     var menu = document.querySelector('.menu');
+    var profile = document.querySelector('.profile');
     var menuOffsetTop = menu.offsetTop;
     var stickyMenu = () => {
         if (window.scrollY > menuOffsetTop) {
-            menu.classList.add('sticky')
+            menu.classList.add('sticky');
+            profile.style.marginTop = `${menu.clientHeight}px`;
         } else {
-            menu.classList.remove('sticky')
+            menu.classList.remove('sticky');
+            profile.style.marginTop = '0px';
         }
     }
     window.addEventListener('scroll', stickyMenu)
