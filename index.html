@@ -217,15 +217,16 @@
                 <h2 class="title">Education</h2>
                 <div class="education-item">
                     <h3>Bachelor of Technology</h3>
-                    <p>Electronics & Communication Engineering, Govt. College of Engineering, Kannur University</p>
+                    <p>Electronics & Communication Engineering, Govt. College of Engineering, Kannur University, IND.
+                    </p>
                 </div>
                 <div class="education-item">
                     <h3>Plus Two</h3>
-                    <p>M.H.S.S Kandangali, Payyanur. Board of Higher Secondary Examinations, Kerala</p>
+                    <p>M.H.S.S Kandangali, Payyanur. Board of Higher Secondary Examinations, Kerala, IND.</p>
                 </div>
                 <div class="education-item">
                     <h3>SSLC</h3>
-                    <p>Govt. Boys High School, Payyanur. Board of Public Examinations, Kerala</p>
+                    <p>Govt. Boys High School, Payyanur. Board of Public Examinations, Kerala.</p>
                 </div>
             </div>
         </section>
@@ -248,5 +249,17 @@
 
     </footer>
 </body>
+<script type="text/javascript">
+    var menu = document.querySelector('.menu');
+    var menuOffsetTop = menu.offsetTop;
+    var stickyMenu = () => {
+        if (window.scrollY > menuOffsetTop) {
+            menu.classList.add('sticky')
+        } else {
+            menu.classList.remove('sticky')
+        }
+    }
+    window.addEventListener('scroll', stickyMenu)
+</script>
 
 </html>

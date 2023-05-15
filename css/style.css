@@ -41,6 +41,16 @@ p {
     padding-bottom: 8px
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+    background-color: #ebd4cbff;
+    box-shadow: 0px 4px 8px -8px #111;
+}
+
 /* Header */
 .menu {
     margin-bottom: 20px;
@@ -52,6 +62,11 @@ p {
     list-style-type: none;
     display: flex;
     justify-content: center;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: black;
 }
 
 .menu-items li {
