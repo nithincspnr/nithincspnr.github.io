@@ -1,2 +1,2 @@
 ## My resume 🚀 
-This is my portfolio built myself using html, css and JS as part of learning the fundamentals of CSS
+This is my portfolio built by myself using HTML, CSS and JS as part of learning the fundamentals of CSS
