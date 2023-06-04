@@ -143,6 +143,10 @@ ul {
     padding-bottom: 32px;
 }
 
+.projects a {
+    text-decoration: none;
+}
+
 /* Education */
 .education {
     background-color: #890620ff;
